@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <div class="card">
+            <img class="imagen" src="assets/img/raqueta.jpeg" alt="">
+            <p>Raqueta de Tenis Wilson</p>
+           <div class="form">
+                <input type="text" placeholder="Cantidad" id="cantidadIngresada">
+                <select name="" id="colorIngresado">
+                    <option value="blue">Azul</option>
+                    <option value="black">Negro</option>
+                    <option value="green">Verde</option>
+                    <option value="red">Rojo</option>
+                    <option value="cyan">Celeste</option>
+                </select>
+            </div>
+            <p>Precio: $100.000</p>
+            <button id="boton" onclick="funcionGeneral()"
+            "    
+            >Calcular Total</button>
+        </div>
+
+        <div class="resumen">
+            <ul>
+                <li>Total: <span id="compraTotal"></span></li>
+                <li>Cantidad: <span id="cantidadTotal"></span></li>
+                <li>Color: <span id="colorObjeto"></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
